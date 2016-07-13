@@ -1,0 +1,17 @@
+/Users/andrewyu/Documents/包子Ｇame/LubDub/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/andrewyu/Documents/包子Ｇame/LubDub/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/andrewyu/Documents/包子Ｇame/LubDub/obj/Debug/Assembly-CSharp.dll
+/Users/andrewyu/Documents/包子Ｇame/LubDub/obj/Debug/Assembly-CSharp.dll.mdb
+/Users/andrewyu/Documents/包子Ｇame/LubDub/Temp/bin/Debug/UnityEngine.dll
+/Users/andrewyu/Documents/包子Ｇame/LubDub/Temp/bin/Debug/UnityEditor.dll
+/Users/andrewyu/Documents/包子Ｇame/LubDub/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/andrewyu/Documents/包子Ｇame/LubDub/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/andrewyu/Documents/包子Ｇame/LubDub/Temp/bin/Debug/Mono.Cecil.dll
+/Users/andrewyu/Documents/包子Ｇame/LubDub/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/andrewyu/Documents/包子Ｇame/LubDub/Temp/bin/Debug/Unity.DataContract.dll
+/Users/andrewyu/Documents/包子Ｇame/LubDub/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/andrewyu/Documents/包子Ｇame/LubDub/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/andrewyu/Documents/包子Ｇame/LubDub/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/andrewyu/Documents/包子Ｇame/LubDub/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/andrewyu/Documents/包子Ｇame/LubDub/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/andrewyu/Documents/包子Ｇame/LubDub/Temp/bin/Debug/Mono.Cecil.Mdb.dll
