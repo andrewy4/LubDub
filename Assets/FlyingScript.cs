@@ -26,9 +26,9 @@ public class FlyingScript : MonoBehaviour {
 
 	RaycastHit hit; //Store the hit information
 	public bool draggingMode = false;
-	public bool canBeDragA = true;
-	public bool canBeDragB = true;
-	public bool canBeDragC = true;
+
+
+
 
 	// Use this for initialization
 	void Start () {
@@ -46,8 +46,7 @@ public class FlyingScript : MonoBehaviour {
 				GoCenter = gameObjectToDrag.transform.position;
 				touchPosition = Camera.main.ScreenToWorldPoint (Input.mousePosition);
 				offset = touchPosition - GoCenter;
-				if(canBeDragA && canBeDragB && canBeDragC)
-					draggingMode = true;
+				draggingMode = true;
 			}//end if(raycast)
 		} //end if(mouse Button Down)
 		
@@ -72,15 +71,29 @@ public class FlyingScript : MonoBehaviour {
 			draggingMode = false;
 			if (gameObjectToDrag != null) {
 				if (gameObjectToDrag.name == "A") {
-					if(gameObjectToDrag.transform.position.x < -1 &&  gameObjectToDrag.transform.position.x > -2 &&
-						gameObjectToDrag.transform.position.y < 1.5 && gameObjectToDrag.transform.position.y > 0.5)
-						canBeDragA = false;
+					if (gameObjectToDrag.transform.position.x < -1 && gameObjectToDrag.transform.position.x > -2 &&
+					    gameObjectToDrag.transform.position.y < 1.5 && gameObjectToDrag.transform.position.y > 0.5) {
+
+						Destroy (GameObject.FindWithTag ("positionA"));
+						Destroy (GameObject.FindWithTag ("A"));
+					}
 				}
+				
 				if (gameObjectToDrag.name == "B") {
-					canBeDragB = false;
+					if (gameObjectToDrag.transform.position.x < -0.75 && gameObjectToDrag.transform.position.x > -1.25 &&
+						gameObjectToDrag.transform.position.y < -1.75 && gameObjectToDrag.transform.position.y > -2.5) {
+
+						Destroy (GameObject.FindWithTag("positionB"));
+						Destroy (GameObject.FindWithTag ("B"));
+					}
 				}
 				if (gameObjectToDrag.name == "C") {
-					canBeDragC = false;
+					if (gameObjectToDrag.transform.position.x < 1.75 && gameObjectToDrag.transform.position.x > 0.75 &&
+						gameObjectToDrag.transform.position.y < 0.75 && gameObjectToDrag.transform.position.y > -0.25) {
+
+						Destroy (GameObject.FindWithTag("positionC"));
+						Destroy (GameObject.FindWithTag ("C"));
+					}
 				}
 				gameObjectToDrag = null;
 			}
@@ -100,14 +113,7 @@ public class FlyingScript : MonoBehaviour {
 
 	/*Moving*/
 	void move(){
-		if (canBeDragA == false && gameObject.name == "A") {
-			transform.position = new Vector3(-1.5f,1f);
-			return;
-		}
-		if (canBeDragB == false && gameObject.name == "B") {
-		}
-		if (canBeDragC == false  && gameObject.name == "C") {
-		}
+
 
 		/*Rotation the piece*/
 		float rotAmount = degreesPerSec * Time.deltaTime;
